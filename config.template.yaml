@@ -19,6 +19,7 @@ enableForwardedWhitelist: false
 whitelist:
   - ::1
   - 127.0.0.1
+  - 10.16.*.*
 whitelistDockerHosts: true
 basicAuthMode: true
 basicAuthUser:
