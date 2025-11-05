@@ -27,11 +27,12 @@ basicAuthUser:
   password: "${BASIC_AUTH_PASS}" # 从 Secret 读取密码
 enableCorsProxy: false
 requestProxy:
-  enabled: false
+  enabled: true
   url: "socks5://username:password@example.com:1080"
   bypass:
     - localhost
     - 127.0.0.1
+    - 10.16.*.*
 enableUserAccounts: false
 enableDiscreetLogin: false
 autheliaAuth: false
